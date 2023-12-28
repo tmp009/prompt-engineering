@@ -19,17 +19,18 @@ app.post('/calc', async (req, res) => {
         const equation = req.body.equation;
         const completion = await openai.chat.completions.create({
             messages: [{ role: "system", content: "You are a calclator." },    
-                    {role: "user", content: `calculate the following equation: "${equation}". Return it as JSON structer: {"answer": ANSWER} or {"error": ERROR}`}
+                    {role: "user", content: 
+                    `calculate the following equation: "${equation}". Return it as a JSON structer: {"answer": ANSWER} or {"answer": "Ei onnistunut"}`}
                 ],
-            model: "gpt-4",
+            model: "gpt-4"
           });
     
-        res.json(JSON.parse(completion.choices[0].message.content) )
+        res.json( JSON.parse(completion.choices[0].message.content) )
         
     } catch (error) {
-        console.log(error)
+        res.json({ answer: "Ei onnistunut" })
     }
 });
 
 
-app.listen(3000, '0.0.0.0', ()=>console.log('http://localhost:3000/'))
+app.listen(3000, 'localhost', ()=>console.log('http://localhost:3000/'))

@@ -2,9 +2,9 @@ const equation = document.querySelector("input");
 const answer = document.querySelector('h3');
 const button = document.querySelector('button');
 
-button.addEventListener("click", ()=>{
+button.addEventListener("click", async ()=>{
 
-    fetch('/calc', {
+    const data = await fetch('/calc', {
         method:'POST',
         headers:{
             'Content-Type':'application/json'
@@ -12,6 +12,8 @@ button.addEventListener("click", ()=>{
         body:JSON.stringify({
             equation: equation.value
         }),
-    }).then(data => data.json())
-    .then(json => answer.textContent = json.answer)
+    })
+    
+    const jsonData = await data.json();
+    answer.textContent = jsonData.answer;
 })
