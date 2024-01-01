@@ -8,7 +8,7 @@ dotenv.load_dotenv(dotenv_path=dotenv.find_dotenv())
 openai_key = os.environ.get('OPENAI_API_KEY')
 
 if not openai_key: 
-    print('OPENAI_API_KEY missing')
+    print('OPENAI_API_KEY ei löytyy')
     exit(0)
 
 if len(sys.argv) < 2:
@@ -28,7 +28,11 @@ completion = client.chat.completions.create(
         },
                 {
             "role":"user",
-            "content":f"Summarize into three key points if it's possible: {text}"
+            "content":f"If you can't summarize the text then reply with \"En pystyy tiivistää tekstiä.\""
+        },
+        {
+            "role":"user",
+            "content":f"Summarize into three key points: {text}"
         }
             ],
     model='gpt-4'
