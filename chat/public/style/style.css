@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+#head-txt {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#top-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: aliceblue;
+    text-align: center;
+    border-style:ridge;
+    border-color: black;
+    margin-bottom: 0.6px;
+}
+
+#messages {
+    background-color: rgb(109, 157, 200);
+    border-style: groove;
+    border-color: black;
+    height: 400px;
+    overflow:auto;
+}
+
+
+.message {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+
+}
+
+.message:hover {
+    background-color: aquamarine;
+}
+
+#chat-form {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#send-btn {
+    text-align: center;
+}

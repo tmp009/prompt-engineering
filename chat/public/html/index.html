@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/script/chat.js" defer></script>
+    <title>Chat-sivusto</title>
+</head>
+<body>
+    <h1 id="head-txt">Chat-sivusto</h1>
+    <div id="top-text">
+        <h2>Nimi</h2>
+        <h2>Viesti</h2>
+        <h2>Lähdetetty</h2>
+    </div>
+    
+    <div id="messages">
+        <div class="message" data-id="1">
+            <p>System</p>
+            <p>Olen chatbotti, joka käyttää GPT-4</p>
+            <p>Null</p>
+        </div>
+    </div>
+
+    <form id="chat-form">
+        <label for="fmsg">Viesti:</label> <input type="text" id="msg" size="50px" onkeydown="return event.key != 'Enter'">
+        <button type="button" id="send-btn">Lähetää</button>
+    </form>
+</body>
+</html>
