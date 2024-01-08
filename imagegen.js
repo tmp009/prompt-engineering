@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-const fs = require('fs')
 const { OpenAI } = require('openai');
 const { exit } = require('process');
 
