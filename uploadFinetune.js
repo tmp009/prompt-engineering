@@ -17,7 +17,7 @@ async function uploadFile(name) {
 
 async function createFineTune(id, model) {
     try {
-        const ft = await openai.fineTunes.create({training_file: id, model: model})
+        const ft = await openai.fineTuning.jobs.create({training_file: id, model: model})
         return ft
     } catch (error) {
         console.log(error)
