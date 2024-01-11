@@ -1,0 +1,3 @@
+[11/1/2024]
+Selitää assistant ja threads [x]
+Tuottaa luovaa sisältöä GPT:llä [x]
