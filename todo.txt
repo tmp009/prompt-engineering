@@ -1,3 +1,7 @@
+[12/1/2024]
+Selitää threadin rajoitukset [x]
+Selitää mitkä prompti olen käytänyt script.txt tuottamiseen [x]
+
 [11/1/2024]
 Selitää assistant ja threads [x]
 Tuottaa luovaa sisältöä GPT:llä [x]
