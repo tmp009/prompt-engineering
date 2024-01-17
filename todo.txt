@@ -1,3 +1,8 @@
+[17/1/2024]
+Kertoo GPT:n context window token rajoitukset [x]
+Tarkistaa, että kuva muokkamista toimii ilman promptissa sanotaan alkuperäisen kuvan sisältöä [x]
+Kokeilee isomman aluen muokkamista Dall-e:lla [x]
+
 [16/1/2024]
 Selitää threadin maksimi koko rajoitusta [x]
 Luo kuvasta kolme versiota Dall-E:lla, josta osa on muutettu. [x]
