@@ -1,3 +1,6 @@
+[18/1/2024]
+Kokeilee funktiot [x]
+
 [17/1/2024]
 Kertoo GPT:n context window token rajoitukset [x]
 Tarkistaa, että kuva muokkamista toimii ilman promptissa sanotaan alkuperäisen kuvan sisältöä [x]
