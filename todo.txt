@@ -1,3 +1,7 @@
+[22/01/2024]
+Create and test prompts with CSV data [x]
+Try out Cypress [x]
+
 [18/1/2024]
 Kokeilee funktiot [x]
 
