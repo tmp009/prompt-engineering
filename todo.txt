@@ -1,3 +1,8 @@
+[23/01/2024]
+Create express project for csv handeling with ai [x]
+Try out csv in threads [x]
+Try intercepting fetch request in Cypress [x]  
+
 [22/01/2024]
 Create and test prompts with CSV data [x]
 Try out Cypress [x]
