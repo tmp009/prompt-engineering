@@ -8,11 +8,10 @@ const openai = new OpenAI();
 async function getMessages(threadId) {
     try {
 
-        const messages = await openai.beta.threads.messages.list(threadId);
+        const messages = await openai.beta.threads.messages.list(threadId, {limit:100});
         const content = messages.data.map((v)=>v.content[0].text).reverse()
 
         content.forEach(v => console.log(v.value))            
-        
     } catch (error) {
         console.log(error);
     }
