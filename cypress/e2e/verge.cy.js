@@ -36,7 +36,7 @@ describe('localhost', ()=>{
   it('can fill form', ()=>{
     cy.get('#fname').type('Jon')
     cy.get('#lname').type('White')
-    cy.get('#pnumber').type('+348 0123456')
+    cy.get('#pnumber').type('+358 0123456')
 
     cy.get('#saddress').type('Foobar 7 E')
     cy.get('#email').type('example@example.com')
