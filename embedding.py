@@ -43,7 +43,7 @@ def strings_ranked_by_relatedness(query: str, df: pd.DataFrame, relatedness_fn=l
 
 def ask(prompt):
     faq = []
-    questions, answers, _ = strings_ranked_by_relatedness("moomin color", df, top_n=10)
+    questions, answers, _ = strings_ranked_by_relatedness(prompt, df, top_n=10)
     for question, answer in zip(questions, answers):
         faq_string = f"""Q: {question}
 A: {answer}"""
