@@ -28,7 +28,17 @@ if (len(sys.argv) < 2):
 
 question = sys.argv[1]
 
-search_results = es.search(index="faq", q=question, size=100)
+search_results = es.search(index="faq", body={
+    "query": {
+        "match": {
+            "question": {
+                "query": question,
+                "fuzziness": "AUTO" 
+            }
+        }
+    },
+    "size": 100  
+})
 
 def ask(prompt):
     faq = []
